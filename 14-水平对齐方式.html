@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            /* text-align: left; */
+            /* text-align: right; */
+            text-align: center;
+        }
+
+        body {
+            text-align: center;
+        }
+        /* 说的是对父元素设置，文本的父元素是h1标签，h1标签没有设置对齐才会去找body标签，img标签的父元素是body，所以就看body标签的对齐方式，但是这里文本的父元素h1有设置对齐，就不会去找body */
+    </style>
+</head>
+<body>
+    <h1>新闻标题</h1>
+    
+    <img src="./images/1.jpg" alt="">
+</body>
+</html>
+
+<!-- ➢ 属性名：text-align
+     ➢ 取值：
+            属性值      效果
+            left        左对齐
+            center      居中对齐
+            right       右对齐
+     ➢ 注意点：
+          • 如果需要让文本水平居中，text-align属性给文本所在标签（文本的父元素）设置 -->
+
+<!-- ➢ text-align : center 能让哪些元素水平居中？
+        1. 文本
+        2. span标签、a标签
+        3. input标签、img标签
+     ➢ 注意点：
+        1. 如果需要让以上元素水平居中， text-align : center 需要给以上元素的 父元素 设置 -->
