@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 行内块：一行希纳是多个；加宽高生效 */
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        input {
+            width: 50px;
+            height: 50px;
+        }
+
+        textarea {
+            width: 50px;
+            height: 40px;
+        }
+
+        button {
+            width: 40px;
+            height: 40px;
+        }
+
+        select {
+            width: 60px;
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <img src="./images/1.jpg" alt="">
+    <img src="./images/1.jpg" alt="">
+    <input type="text">
+    <input type="text">
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <button>按钮</button>
+    <button>按钮</button>
+    <select name="" id="">test1</select>
+    <select name="" id="">test2</select>
+</body>
+</html>
+
+
+
+<!-- ➢ 显示特点：
+        1. 一行可以显示多个
+        2. 可以设置宽高
+     ➢ 代表标签：
+        • input、textarea、button、select……
+        • 特殊情况：img标签有行内块元素特点，但是Chrome调试工具中显示结果是inline -->
+
+
+<!-- 元素显示模式转换
+        ➢ 目的：改变元素默认的显示特点，让元素符合布局要求
+        ➢ 语法；
+        属性                    效果                    使用频率
+    display：block          转换成块级元素                较多
+    display：inline-block   转换成行内块元素              较多
+    display：inline         转换成行内元素                较少-->
