@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            color: orange;
+        }
+
+        .box {
+            color: blue;
+        }
+
+        div {
+            color: green !important;
+        }
+
+
+        body {
+            color: red;
+        }
+        /* !important不能给继承的添加，自己有样式无法继承父级样式(body) */
+        /* 不能把!important添加在body里面的color里 */
+
+    </style>
+</head>
+<body>
+    <!-- 意义： 当一个标签使用了多个选择器，样式冲突的时候，到底谁生效 -->
+    <!-- style="color:"    这个是行内选择器 -->
+    <div class="box" id="box" style="color: pink;">测试优先级</div>
+</body>
+</html>
+
+
+<!--    ➢ 特性：不同选择器具有不同的优先级，优先级高的选择器样式会覆盖优先级低选择器样式
+        ➢ 优先级公式：
+        • 继承 < 通配符选择器 < 标签选择器 < 类选择器 < id选择器 < 行内样式 < !important
+        ➢ 注意点：
+        1. !important写在属性值的后面，分号的前面！
+        2. !important不能提升继承的优先级，只要是继承优先级最低！
+        3. 实际开发中不建议使用 !important -->
+
+
+
+<!--小结： 
+    ➢ 优先级比较公式是怎样的？
+        • 继承 < 通配符选择器 < 标签选择器 < 类选择器 < id选择器 < 行内样式 < !important
+     ➢ !important能提升继承的优先级吗？
+        • 不能 -->
