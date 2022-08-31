@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* border 撑大盒子的尺寸 */
+            /* 盒子尺寸 = width  /  height + 边框线 */
+            /* 如果400 * 400 尺寸 */
+            width: 380px;
+            height: 380px;
+            background-color: green;
+            border: 10px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div>div</div>
+</body>
+</html>
+
+<!-- 3.4 盒子实际大小初级计算公式
+➢ 需求：盒子尺寸 400*400，背景绿色，边框10px 实线 黑色，如何完成？
+• 注意点： ① 设置width和height是内容的宽高！② 设置border会撑大盒子！
+➢ 盒子实际大小初级计算公式：
+• 盒子宽度 = 左边框 + 内容宽度 + 右边框
+• 盒子高度 = 上边框 + 内容高度 + 下边框
+➢ 解决：当盒子被border撑大后，如何满足需求？
+• 解决：计算多余大小，手动在内容中减去（手动内减） -->
