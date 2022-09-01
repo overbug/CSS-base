@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            /* 添加了4个方向的内边距 */
+            padding: 50px;
+
+            /* padding属性可以当作复合属性使用，表示单独设置某个方向的内边距 */
+            /* padding 最多取4个值 */
+
+
+            /* 四值：上 右  下   左 */
+            /* padding: 10px 20px 40px 80px; */
+
+            /* 三值：上   左右   下 */
+            /* padding: 10px 40px 80px; */
+
+            /* 两值：上下       左右 */
+            padding: 10px 80px;
+        }
+
+
+        /* 多值写法， 永远都是从上开始顺时针转一圈，如果数不够，看对面 */
+    </style>
+</head>
+<body>
+    <div>文字</div>
+</body>
+</html>
+
+
+<!-- 
+4.2 内边距（padding）- 单方向设置 -->
+
+<!-- ➢ 场景：只给盒子的某个方向单独设置内边距
+➢ 属性名：padding - 方位名词
+➢ 属性值：数字 + px -->
+
+
+<!-- 小结
+➢ 给盒子设置四周 20px 的内边距可以通过什么属性设置？
+• padding : 20px ;
+➢ 给盒子设置上下20px、左右30px的内边距可以通过什么属性设置？
+• padding : 20px 30px ;
+➢ 给盒子设置左侧50px的内边距可以通过什么属性设置？
+• padding-left : 50px ; -->
