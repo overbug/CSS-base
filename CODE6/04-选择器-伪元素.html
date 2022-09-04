@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+        }
+
+        .father::before {
+            /* 内容 */
+            /* content属性必须添加，否则伪元素不生效 */
+            content: '鼠鼠';
+            color: green;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+
+            /* 默认行内元素，宽高不生效 */
+            display: block;
+        }
+
+
+        .father::after {
+            content: '米';
+        }
+    </style>
+</head>
+<body>
+    <!-- 伪元素 通过css创建标签，装饰性的不重要的小图 -->
+
+    <!-- 找父级，在这个父级里面创建子级标签 -->
+
+    <div class="father">诶</div>
+
+    <!-- 鼠鼠诶米 -->
+</body>
+</html>
+
+<!-- 目标：能够使用 伪元素 在网页中创建内容 -->
+
+<!-- ➢ 伪元素：一般页面中的非主体内容可以使用伪元素
+➢ 区别：
+1. 元素：HTML 设置的标签
+2. 伪元素：由 CSS 模拟出的标签效果
+➢ 种类：
+        伪元素              作用
+      ::before          在元素内容的最前添加一个伪元素  
+      ::after          在元素内容的最后添加一个伪元素  
+
+➢ 注意点：
+1. 必须设置content属性才能生效
+2. 伪元素默认是行内元素 -->
+
+
+<!-- ➢ 伪元素的必加属性是？
+• content属性
+➢ 伪元素创建出来后默认的显示模式是？
+• 行内元素 -->
