@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            margin: 50px auto;
+
+            width: 640px;
+            height: 50px;
+            background-color: #ffc0cb;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .nav li {
+            float: left;
+        }
+
+        .nav li a {
+            /* 1.浮动   /display */
+            /* display: block; */
+
+            display: inline-block;
+
+            /* 2.盒子模型 */
+            width: 80px;
+            height: 50px;
+            /* background-color: green; */
+
+            text-align: center;
+            line-height: 50px;
+
+            /* 3.文字样式 */
+            color: #fff;
+            text-decoration: none;
+        }
+
+
+        .nav li a:hover{
+            background-color: green;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- nav导航的意思 -->
+    <div class="nav">
+        <ul>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">新闻</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+
+
+<!-- 书写网页导航步骤 -->
+<!-- 1. 清除默认的margin和padding
+2. 找到ul，去除小圆点
+3. 找到li标签，设置浮动让li一行中显示
+4. 找到a标签，设置宽高 → a标签默认是行内元素，默认不能设置宽高？？
+• 方法一：给a标签设置 display : inline-block
+• 方法二：给a标签设置 display : block
+• 方法三：给a设置 float : left -->
